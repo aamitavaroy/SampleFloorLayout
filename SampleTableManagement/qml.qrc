@@ -1,11 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/DragTile.qml</file>
-        <file>qml/DropTile.qml</file>
         <file>qml/main.qml</file>
-        <file>qml/Tiles.qml</file>
         <file>qml/Floor.qml</file>
         <file>qml/FloorTile.qml</file>
-        <file>qml/Table.qml</file>
+        <file>qml/TableSqure.qml</file>
+        <file>qml/TabComponent.qml</file>
+        <file>qml/TableRect.qml</file>
+        <file>qml/TableBCircle.qml</file>
+        <file>qml/TableSCircle.qml</file>
     </qresource>
 </RCC>

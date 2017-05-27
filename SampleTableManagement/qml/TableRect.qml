@@ -14,27 +14,27 @@ Rectangle {
         anchors.fill: parent
         onClicked:
         {
-            if(selected)
-            {
-                if(isAnyTable){
-
-                    tableClicked(position,false)
+            if( selected ) {
+                if( isAnyTable ) {
+                    tableClicked( position, false , "Rect")
                     tabId.visible = false
-                }
-                else {
-
-                    tableClicked(position,true)
+                } else {
+                    tableClicked( position, true , "Rect")
                     tabId.visible = true
                 }
             }
         }
     }
+
     Rectangle{
         id: tabId
         visible: isAnyTable?true:false
         anchors.centerIn: parent
         height: 25
-        width: 25
+        width: 50
         color: "cyan"
+        onVisibleChanged: {
+            visible = isAnyTable?true:false
+        }
     }
 }
